@@ -1,0 +1,15 @@
+streamlit
+langchain
+langchain-community
+langchain-core
+langchain-ollama
+langchain-text-splitters
+chromadb
+pandas
+numpy
+huggingface_hub
+sentence-transformers
+pydantic
+duckdb
+tiktoken
+pyngrok
