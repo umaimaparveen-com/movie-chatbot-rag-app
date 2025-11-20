@@ -17,7 +17,7 @@ from langchain_core.runnables import RunnablePassthrough
 
 DATA_PATH = "data/cornell/"
 
-lines_df = pd.read_csv(f"{DATA_PATH}/movie_lines.csv")
+lines_df = pd.read_csv(f"data/movie_lines.csv.gz")
 characters_df = pd.read_csv(f"{DATA_PATH}/movie_characters.csv")
 titles_df = pd.read_csv(f"{DATA_PATH}/movie_titles.csv")
 
