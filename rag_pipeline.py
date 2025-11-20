@@ -19,7 +19,7 @@ DATA_PATH = "data/cornell/"
 
 lines_df = pd.read_csv(f"data/movie_lines.csv.gz")
 characters_df = pd.read_csv(f"{DATA_PATH}/movie_characters.csv")
-titles_df = pd.read_csv(f"{DATA_PATH}/movie_titles.csv")
+titles_df = pd.read_csv(f"data/movie_titles.csv")
 
 lines_df.columns = lines_df.columns.str.strip()
 characters_df.columns = characters_df.columns.str.strip()
