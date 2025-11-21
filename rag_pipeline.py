@@ -89,7 +89,11 @@ retriever = vector_db.as_retriever(search_kwargs={"k": 4})
 # LLM + PROMPT
 # ============================================================
 
-llm = ChatOllama(model="llama3", temperature=0)
+model_name = "TheBloke/Llama-3-3B-GGUF"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
+pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=512)
+llm = HuggingFacePipeline(pipeline=pipe)
 
 prompt = PromptTemplate(
     input_variables=["context", "question"],
