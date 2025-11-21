@@ -13,3 +13,4 @@ pydantic
 duckdb
 tiktoken
 pyngrok
+transformers 
